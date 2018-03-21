@@ -15,6 +15,15 @@ var handlers = {
     }
     this.emit(':responseReady');
   }
+  
+  'ProduktIntent': function () {
+    var myProdukt = this.event.request.intent.slots.produkt.value;
+    if (myProdukt == "Birne") {
+        this.response.speak("Birnen haben von August bis Mitte November Saison.");
+    }
+    this.emit(':responseReady');
+  }
+  
 };
 
 exports.handler = function(event, context, callback){
