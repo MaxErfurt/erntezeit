@@ -18,7 +18,7 @@ var handlers = {
     }
     this.emit(':responseReady');
   }
-}
+};
 
 exports.handler = function(event, context, callback){
     var alexa = Alexa.handler(event, context);
