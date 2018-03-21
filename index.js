@@ -11,7 +11,7 @@ var handlers = {
   'ProduktIntent': function () {
     var myProdukt = this.event.request.intent.slots.produkt.value;
     if (myProdukt == "apfel") {
-        this.response.speak("Correct! Python is the most popular language.");
+        this.response.speak("Die meisten Apfelsorten werden im Oktober und September geerntet. Aber viele Sorten gibt es das ganze Jahr lang aus Lagerung. Gut Biss!");
     }
     else {
         this.response.speak("You guessed that " + myProdukt + " is the most popular. Actually, Python is our most popular language");
