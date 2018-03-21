@@ -13,6 +13,11 @@ var handlers = {
     if (myProdukt == "apfel") {
         this.response.speak("Die meisten Apfelsorten werden im Oktober und September geerntet. Aber viele Sorten gibt es das ganze Jahr lang aus Lagerung. Gut Biss!");
     }
+  'ProduktIntent': function () {
+    var myProdukt = this.event.request.intent.slots.produkt.value;
+    if (myProdukt == "birne") {
+        this.response.speak("Birnen werden hauptsächlich von August bis Mitte November geerntet.");
+    }
     else {
         this.response.speak("You guessed that " + myProdukt + " is the most popular. Actually, Python is our most popular language");
     }
