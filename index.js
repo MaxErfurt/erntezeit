@@ -14,7 +14,7 @@ var handlers = {
         this.response.speak("Die meisten Apfelsorten werden im Oktober und September geerntet. Aber viele Sorten gibt es das ganze Jahr lang aus Lagerung. Gut Biss!");
     }
     this.emit(':responseReady');
-  }
+  },
   
   'ProduktIntent': function () {
     var myProdukt = this.event.request.intent.slots.produkt.value;
