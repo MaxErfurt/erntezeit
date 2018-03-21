@@ -18,6 +18,42 @@ var handlers = {
         this.response.speak("Birnen haben von August bis Mitte November Saison. Tipp vom Profi: Birnen-Cider gibt es das ganze Jahr!");
     this.emit(':responseReady');
     }
+    if (myProdukt == "kirsche") {
+        this.response.speak("Kirschen haben von Juni bis Mitte September Saison. Kirschwasser? Immer!");
+    this.emit(':responseReady');
+    }
+    if (myProdukt == "mirabelle") {
+        this.response.speak("Mirabellen haben von Juli bis Mitte September Saison.");
+    this.emit(':responseReady');
+    }
+    if (myProdukt == "pflaume") {
+        this.response.speak("Pflaumen haben von Juli bis Mitte Oktober Saison.");
+    this.emit(':responseReady');
+    }
+    if (myProdukt == "quitte") {
+        this.response.speak("Quitten haben von August bis Mitte November Saison.");
+    this.emit(':responseReady');
+    }
+    if (myProdukt == "aprikose") {
+        this.response.speak("Aprikosen haben im Juli und August Saison.");
+    this.emit(':responseReady');
+    }
+    if (myProdukt == "maulbeere") {
+        this.response.speak("Maulbeeren haben von Mitte Juni bis Mitte August Saison. Was auch immer Maulbeeren sind.");
+    this.emit(':responseReady');
+    }
+    if (myProdukt == "brombeere") {
+        this.response.speak("Brombeeren haben von August bis Oktober Saison.");
+    this.emit(':responseReady');
+    }
+    if (myProdukt == "himbeere") {
+        this.response.speak("Himbeeren haben von Mitte Juni bis August Saison.");
+    this.emit(':responseReady');
+    }
+    if (myProdukt == "heidelbeere") {
+        this.response.speak("Heidelbeeren haben von Mitte Juni bis August September.");
+    this.emit(':responseReady');
+    }
   }
 };
 
