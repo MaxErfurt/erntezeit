@@ -12,8 +12,12 @@ var handlers = {
     var myProdukt = this.event.request.intent.slots.produkt.value;
     if (myProdukt == "apfel") {
         this.response.speak("Die meisten Apfelsorten werden im Oktober und September geerntet. Aber viele Sorten gibt es das ganze Jahr lang aus Lagerung. Gut Biss!");
-    }
     this.emit(':responseReady');
+    }
+    if (myProdukt == "birne") {
+        this.response.speak("Birnen haben von August bis Mitte November Saison. Tipp vom Profi: Birnen-Cider gibt es das ganze Jahr!");
+    this.emit(':responseReady');
+    }
   }
 };
 
