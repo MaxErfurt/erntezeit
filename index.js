@@ -15,7 +15,7 @@ var handlers = {
     this.emit(':responseReady');
     }
     if (myProdukt == "birne") {
-        this.response.speak("Birnen haben von August bis Mitte November Saison. Tipp vom Profi: Birnen-Cider gibt es das ganze Jahr!");
+        this.response.speak("Birnen haben von August bis Mitte November Saison. <amazon:effect name="whispered">Tipp vom Profi: Birnen-Cider gibt es das ganze Jahr!</amazon:effect>");
     this.emit(':responseReady');
     }
     if (myProdukt == "kirsche") {
